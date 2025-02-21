@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35818.85 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ufs2tools-reboot", "ufs2tools-reboot\ufs2tools-reboot.vcxproj", "{453606E2-489A-4269-8553-A0036DFF5771}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bsdlabel", "bsdlabel\bsdlabel.vcxproj", "{ADAAFC34-FFB0-40B1-A6AE-993AD9095C72}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{453606E2-489A-4269-8553-A0036DFF5771}.Release|x64.Build.0 = Release|Win32
 		{453606E2-489A-4269-8553-A0036DFF5771}.Release|x86.ActiveCfg = Release|Win32
 		{453606E2-489A-4269-8553-A0036DFF5771}.Release|x86.Build.0 = Release|Win32
+		{ADAAFC34-FFB0-40B1-A6AE-993AD9095C72}.Debug|x64.ActiveCfg = Debug|x64
+		{ADAAFC34-FFB0-40B1-A6AE-993AD9095C72}.Debug|x64.Build.0 = Debug|x64
+		{ADAAFC34-FFB0-40B1-A6AE-993AD9095C72}.Debug|x86.ActiveCfg = Debug|Win32
+		{ADAAFC34-FFB0-40B1-A6AE-993AD9095C72}.Debug|x86.Build.0 = Debug|Win32
+		{ADAAFC34-FFB0-40B1-A6AE-993AD9095C72}.Release|x64.ActiveCfg = Release|x64
+		{ADAAFC34-FFB0-40B1-A6AE-993AD9095C72}.Release|x64.Build.0 = Release|x64
+		{ADAAFC34-FFB0-40B1-A6AE-993AD9095C72}.Release|x86.ActiveCfg = Release|Win32
+		{ADAAFC34-FFB0-40B1-A6AE-993AD9095C72}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

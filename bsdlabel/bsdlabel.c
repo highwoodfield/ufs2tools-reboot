@@ -33,7 +33,7 @@
 
 #define DKTYPENAMES
 #define FSTYPENAMES
-#include "disk\diskio.h"
+#include "../ufs2tools-reboot/disk/diskio.h"
 
 static struct disklabel label;
 static char specname[256];
