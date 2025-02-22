@@ -1,6 +1,6 @@
 # ufs2tools-reboot
 
-これは、UFSパーティションをWindowsで読み込むことができるツールである ufs2tools ([HP](https://ufs2tools.sourceforge.net/), [SourceForge](https://sourceforge.net/projects/ufs2tools/)) のバージョン0.8を、とりあえずVisual Studio 2022でビルドできるようにしました。
+UFSパーティションをWindowsで読み込むことができるツールである ufs2tools ([HP](https://ufs2tools.sourceforge.net/), [SourceForge](https://sourceforge.net/projects/ufs2tools/)) のバージョン0.8を、とりあえずVisual Studio 2022でビルドできるようにしました。
 
 私はC/C++を用いた開発の経験がほとんど無いため、おそらくその開発の慣例には従えていないと思いますが、ご容赦ください。
 
