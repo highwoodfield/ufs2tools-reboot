@@ -186,6 +186,7 @@ int main(int argc, char **argv)
 				if (tmp[0] != '\0') {
 					usage();
 				}
+				printf("drive: %d, slice: %d\n", drive, slice);
 				device = open_slice_device(drive, slice);
 			}
 

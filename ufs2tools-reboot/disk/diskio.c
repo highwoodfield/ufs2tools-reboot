@@ -255,12 +255,17 @@ HANDLE open_slice_device(int drive, int slice)
 
 	device = CreateFile(path, GENERIC_READ, FILE_SHARE_READ |
 	    FILE_SHARE_WRITE, NULL, OPEN_EXISTING, 0, NULL);
-	if (device == INVALID_HANDLE_VALUE)
+	if (device == INVALID_HANDLE_VALUE) {
+		printf("open_slice_device: invalid handle\n");
 		return INVALID_HANDLE_VALUE;
+	}
 
 	read_slice_table(device, &table, 0, 0);
 
+	printf("ec: %u\npc: %u\n\n\n", table.dt_entrycount, table.dt_partcount);
+
 	if (slice > NEXTDOSPART+1) {
+		printf("open_slice_device: invalid slice\n");
 		close_device(device);
 		return INVALID_HANDLE_VALUE;
 	}
@@ -268,6 +273,7 @@ HANDLE open_slice_device(int drive, int slice)
 	
 	if (table.dt_partnum[slice] == -1 ||
 	    table.dt_slices[table.dt_partnum[slice]].dp_size == 0) {
+		printf("open_slice_device: invalid size\n");
 		close_device(device);
 		return INVALID_HANDLE_VALUE;
 	} else {
